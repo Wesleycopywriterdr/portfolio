@@ -36,7 +36,7 @@
   }
 
   // ---------- anel das 8 etapas
-  var nomes = ['Pesquisa de público', 'Estratégia', 'Roteiro', 'Copy chief', 'Revisor anti-IA', 'Auditor', 'Entrega', 'Aprendizado'];
+  var nomes = ['Pesquisa de público', 'Estratégia', 'Roteiro', 'Copy chief', 'Revisor anti-IA', 'Auditor', 'Minha revisão', 'Aprendizado'];
   var N = nomes.length, R = 118, CX = 150, CY = 150;
   var gNos = document.getElementById('anel-nos'), ponto = document.getElementById('anel-ponto');
   var prog = document.getElementById('anel-progresso'), numEl = document.getElementById('anel-num'), nomeEl = document.getElementById('anel-nome');

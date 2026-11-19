@@ -85,7 +85,7 @@ p + p { margin-top: 16px; }
 /* problema */
 .problema { background: var(--fundo-2); border-block: 1px solid var(--linha); }
 .problema p { color: var(--suave); font-size: 18px; }
-.problema .destaque { color: var(--texto); font-size: 20px; border-left: 3px solid var(--destaque); padding-left: 18px; margin-top: 28px; }
+.problema .destaque, .quem .destaque { color: var(--texto); font-size: 20px; border-left: 3px solid var(--destaque); padding-left: 18px; margin-top: 28px; }
 
 /* sistema */
 .sistema { display: grid; grid-template-columns: minmax(260px, 380px) 1fr; gap: 56px; align-items: center; margin-top: 30px; }
@@ -169,6 +169,7 @@ p + p { margin-top: 16px; }
 .ganho:hover { border-color: #3a414c; transform: translateY(-3px); }
 .ganho h3::before { content: ""; display: block; width: 28px; height: 3px; background: var(--destaque); border-radius: 2px; margin-bottom: 16px; }
 .ganho p { color: var(--suave); }
+.ganhos.tres { grid-template-columns: repeat(3, 1fr); }
 
 /* portfólio */
 .portfolio { background: radial-gradient(ellipse at 50% 60%, rgba(198,244,50,.1), transparent 60%); }
@@ -205,7 +206,7 @@ p + p { margin-top: 16px; }
 @media (max-width: 680px) {
   body { font-size: 16px; }
   .secao { padding: 72px 0; }
-  .comparar, .ganhos { grid-template-columns: 1fr; }
+  .comparar, .ganhos, .ganhos.tres { grid-template-columns: 1fr; }
   .cartao, .ganho { padding: 22px; }
   .escritorio { height: 320px; }
   .botoes .btn { flex: 1 1 100%; }
@@ -222,7 +223,7 @@ p + p { margin-top: 16px; }
 
 /* base de estudo */
 .base-estudo { margin-top: 28px; background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); padding: 24px 22px; }
-.base-titulo { color: var(--texto); font-weight: 600; margin-bottom: 16px; }
+.base-titulo { color: var(--texto); font: 700 clamp(20px, 2.4vw, 26px)/1.25 var(--titulo); letter-spacing: -.01em; margin-bottom: 20px; padding-left: 14px; border-left: 3px solid var(--destaque); }
 .selos { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
 .selos li { border: 1px solid var(--linha); border-radius: 999px; padding: 8px 14px; color: var(--suave); font-size: 14px; }
 .selos b { color: var(--texto); font-weight: 600; margin-right: 6px; }
